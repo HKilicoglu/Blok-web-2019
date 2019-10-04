@@ -1,0 +1,394 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    font-family: "trebuchet ms",sans-serif;
+    background-color: white;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    margin:0;
+    border:0;
+    padding:0;
+    background-color:white;
+}
+
+/*navigatie header*/
+body > header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 16px 0px rgba(36,36,36,1); 
+}
+
+header ul {
+    display:flex;
+    margin:auto;
+    align-content: left;
+    text-align: left ;
+    list-style:none;
+    padding:0;
+    white-space: nowrap;
+    height:2.5rem;
+    margin-left:1rem;
+    margin-right:0rem;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+
+header > ul li{
+    margin-top:1rem;
+    text-align: left;
+    color:white;
+    width:10%;
+}
+
+header nav ul li a h2{
+    font-size: 1rem;
+    color:#00d66c;
+    margin-left:3rem;
+}
+
+header nav ul li h2{
+    font-size: 1rem;
+    color:#00d66c;
+    margin-left:3rem;
+}
+
+header ul li:nth-of-type(1){
+    color:#4FB266;
+    font-size:1.25rem;
+    background-image: url(/Blok-web/afbeeldingen/logo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+header ul li:nth-of-type(2){
+    background-image: url(/Blok-web/afbeeldingen/verhalenverzameling.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+header ul li:nth-of-type(3){
+    background-image: url(/Blok-web/afbeeldingen/profielgroen.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+header ul li:nth-of-type(4){
+    background-image: url(/Blok-web/afbeeldingen/zoekengroen.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+/* Roepen tot actie: verhalen verzamelen*/
+body > section {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height:13rem;
+    background-image: url(/Blok-web/afbeeldingen/lezen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body section div{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height:10rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin-right:5%;
+    margin-left:5%;
+    border-radius: 1.25em;
+    background:rgba(36,36,36,);
+    box-shadow: 0px 0px 16px 0px rgba(36,36,36,1); 
+}
+
+body > section div h2{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #E8496A;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom:0;
+    border: 1.25rem;
+    padding: 1.25rem;
+}
+
+body section div button{
+    margin:auto;
+    width:13rem;   
+    height:2rem;
+    background-color:#E8496A;
+    color:white;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;   
+    margin-top:1rem;
+}
+
+body> section > button p{
+    margin:auto;
+}
+
+body> section > button:hover{
+    background-color: none;
+    margin:auto;
+    width:13rem;   
+    height:2rem;
+    background-color:#e94e86;
+    color:white;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;   
+    margin-top:1rem;
+}
+
+/* filteren & sorteren*/
+form{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #f7f7f7;
+    height:100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+fieldset{
+    background:#f7f7f7;
+    border:#f7f7f7;
+}
+
+legend{
+    display:none;
+}
+
+input {
+    display:relative;
+    padding: 6px 14px;
+    background-color: #343589;
+    color: white;
+    padding: 6px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #120145;
+}
+
+filter {
+    width:6rem;
+}
+
+label {
+    height: 100%;
+    width: 100%;
+    background-color: #343589;
+    color: white;
+    padding: 6px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1.25em;
+    min-height: 2rem;
+    min-width: 2rem;
+    box-shadow: inset 0 -0.1875em 0.0625em #120145;
+}
+
+
+form ul li button{
+    background-color:#343589;
+    width:100%;
+    color:white;
+    border-radius: 1.25em;
+    min-height: 2rem;
+    min-width: 2rem;
+    box-shadow: inset 0 -0.1875em 0.0625em #120145;
+}
+
+form ul li button:active{
+    background-color:#4FB266;
+}
+
+form ul li button:hover{
+    background-color:#573a8e;
+    width:100%;
+    color:white;
+    border-radius: 1.25em;
+    min-height: 2rem;
+    min-width: 2rem;
+    box-shadow: inset 0 -0.1875em 0.0625em #120145;
+}
+
+/*Main, verhalen*/
+main {
+    margin-top:1rem;
+    margin-bottom:1rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-content: left;
+    color: #343589;
+    background-color: #f7f7f7;
+    border-radius: 1.25em;
+}
+
+h1 {
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    margin-top:0;
+    border-radius:1.25em;
+}
+
+main article {
+    display:100%;
+    box-sizing: border-box;
+    /border:2rem solid #f7f7f7;
+    border-top:0;
+    margin:2rem;
+    
+    background-size: cover;
+    border-radius:1.25em;
+    box-shadow: 0px 0px 16px 0px rgba(36,36,36,1); 
+}
+main article:nth-of-type(1){
+    
+    background-image: url(/Blok-web/afbeeldingen/hyperbool1.jpg);
+}
+
+main article:nth-of-type(2){
+    
+    background-image: url(/Blok-web/afbeeldingen/hyperbool1.jpg);
+}
+
+main article:nth-of-type(3){
+    
+    background-image: url(/Blok-web/afbeeldingen/hyperbool1.jpg);
+}
+
+
+main article header {
+    padding:1rem;
+    align-content: left;
+    text-align: left;
+}
+
+main article p{
+    padding:1rem;
+    margin:0;
+}
+
+main article header > h2{
+    margin:0;
+}
+
+article header h2 > img{
+    width:2.5rem;
+}
+
+main article p button:nth-of-type(1){
+    display:flex;
+    margin-left:auto;
+    margin-bottom:2rem;
+    background-color:#E8496A;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;  
+}
+
+main article:nth-of-type(1) p button:nth-of-type(2){
+    display:flex;
+    align-content: center;   
+    margin:auto;
+    width:15rem; 
+    height:auto;
+    background-color:#E8496A;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;   
+}
+
+main article:nth-of-type(2) p button:nth-of-type(2){
+    display:flex;
+    align-content: center;   
+    margin:auto;
+    width:8rem; 
+    height:auto;
+    background-color:#E8496A;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;   
+}
+
+main article:nth-of-type(3) p button:nth-of-type(2){
+    display:flex;
+    align-content: center;   
+    margin:auto;
+    width:8rem; 
+    height:auto;
+    background-color:#E8496A;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;   
+}
+
+main article p button:nth-of-type(1):hover{
+    display:flex;
+    margin-left:auto;
+    margin-bottom:2rem;
+    background-color:#e94e86;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;  
+}
+
+main article p button:nth-of-type(2):hover{
+    margin:auto;
+    width:12rem; 
+    height:auto;
+    background-color:#e94e86;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;   
+    margin-top:1rem;
+    margin-left:auto;
+}
+
+main article p button> img{
+    width:1.5rem;
+    margin:auto;
+}
+
+/*Metadata*/
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-content: center;
+    text-align: center;
+    width:100%;
+    color: #606060;
+    background-color:#f7f7f7;
+}
+
+footer ul{
+    align-content: center;
+    text-align: center;
+    list-style:none;
+    height:100%;
+    padding: 0;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+footer ul li {
+    display:inline-block;
+    align-content: center;
+    text-align: center;
+    color:white;
+    width:2rem;
+    width:33%;
+}
+
+footer img{
+    width:2rem;
+}
+
+/*/////Ipad/////*/
+@media (min-width: 768px){
+
