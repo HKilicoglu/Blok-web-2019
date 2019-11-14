@@ -8,6 +8,7 @@
         <meta name="keywords" content="Transavia, verhalen, cmd, reizen, onderweg, vermakend, vliegen, lezen"> 
         <meta name="author" content="Hatice Kilicoglu - 212 (500760255)">
         <link rel="stylesheet" href="css/home.css">
+        <script src="/js/script.js"></script>
     </head>
 
     <body> 
@@ -15,32 +16,46 @@
            <nav>
                 <ul>
                     <li>
-                        <a href="transaviaverhalen.html"><img class="Transavvia Verhalen" src="" alt="Transavia Verhalen">
+                        <a href="index.html">
+                            <img class="Transavvia Verhalen" src="afbeeldingen/t.logo.svg" alt="Transavia Verhalen" > 
                         </a>        
                     </li>
 
                     <li>
-                        <a href="verhalenverzameling.html">
-                            <h2>Verhalen verzameling</h2>
+                        <a href="favorieten.html">
+                           <img class="Favorieten" src="/afbeeldingen/favorieten.svg" alt="favorieren">
+                            <h2>Favorieten</h2>
                         </a>  
                     </li>
 
                     <li>
-                        <a href="profiel.html">
-                         <h2>Account</h2>
+                        <a href="account.html">
+                           <img class="Account" src="/afbeeldingen/verhalenverzameling.svg" alt="account">
+                            <h2>Account</h2>
                         </a> 
                     </li>
 
-                    <li>
-                        <h2>zoeken</h2>
+                    <li class="zoeken">
+                           <img src="/afbeeldingen/zoekengroen.svg" alt="zoeken">
+                         <h2>zoeken</h2>
                     </li>
                 </ul>
+                
             </nav>
+        <form id="zoekbalk">
+        <fieldset>
+            <legend>Zoek een verhaal
+            <input type="text" placeholder="zoek naar verhaal" id="search">
+          </legend>
+        </fieldset>
+      </form>
         </header>
 
         <section>
                 <div>
-                    <H2>Bereid je alvast voor op de vlucht! </H2>
+                    <H2>
+                        Bereid je alvast voor op de vlucht!
+                    </H2>
                     <button>
                         Verzamel verhalen
                     </button>
@@ -51,29 +66,29 @@
            <fieldset>
                <legend>Filteren Sorteren</legend>
                
-                <label for="not-read">
-                <input type="radio" name="filter" id="not-read">
-                Niet gelezen
+                <label for="niet-gelezen">
+                    <input type="radio" name="filter" id="niet-gelezen">
+                    Niet gelezen
                 </label>
 
                 <label for="trending">
-                <input type="radio" name="filter" id="trending">
-                Trending
+                    <input type="radio" name="filter" id="trending">
+                    Trending
                 </label>
 
-                <label for="best">
-                <input type="radio" name="filter" id="best">
-                Best beoordeeld
+                <label for="best-beoordeeld">
+                    <input type="radio" name="filter" id="best-beoordeeld">
+                    Best beoordeeld
                 </label>
 
                 <label for="a-z">
-                <input type="radio" name="filter" id="a-z">
-                A-Z
+                    <input type="radio" name="filter" id="a-z">
+                    A-Z
                 </label>
 
                 <label for="aanbevolen">
-                <input type="radio" name="filter" id="aanbevolen">
-                Aanbevolen
+                    <input type="radio" name="filter" id="aanbevolen">
+                    Aanbevolen
                 </label>
             </fieldset>
         </form>
@@ -81,52 +96,48 @@
         <main>
             <h1> Verhalen (10)</h1>
 
-            <article>
-                <header>
-                    <h2>Hardboiled <img src="afbeeldingen/star.png" alt="star">
-                    </h2>
-                </header>
-                <p>
-                    <button>
-                        <img src="afbeeldingen/verderlezen.png" alt="lees meer">
-                    </button>
-                    <button>
-                        <img src="/Blok-web/afbeeldingen/download.png" alt="download">
-                    </button>
-                </p>
-            </article>
-
-            <article>
-                <header>
-                    <h2>Mop 
-                        <img src="afbeeldingen/star.png" alt="star">
-                    </h2>   
-                </header>
-                <p>
-                    <button>
-                        <img src="afbeeldingen/verderlezen.png" alt="lees meer">
-                    </button>
-                    <button>
-                        <img src="/Blok-web/afbeeldingen/download.png" alt="download">
-                    </button>
-                </p>
-            </article>
-
-            <article>
-                <header>             
-                    <h2>Hyperbool 
-                    <img src="afbeeldingen/star.png" alt="star">
-                    </h2>
-                </header>
-                <p>
-                    <button>
-                        <img src="afbeeldingen/verderlezen.png" alt="lees meer">
+            <div>
+               <article>
+                    <header>
+                        <h2>Hardboiled <img src="afbeeldingen/star.png" alt="star">
+                        </h2>
+                    </header>
+                    <p>
+                        <a class="lezen" href="/hardboiled.html">
+                        </a>
+                        <button class="nognietgeklikt">
                         </button>
-                        <button>
-                        <img src="/Blok-web/afbeeldingen/download.png" alt="download">
-                    </button>
-                </p>    
-            </article>
+                    </p>
+                </article>
+    
+                <article>
+                    <header>
+                        <h2>Mop 
+                            <img src="afbeeldingen/star.png" alt="star">
+                        </h2>   
+                    </header>
+                    <p>
+                        <a class="lezen" href="/mop.html">
+                        </a>
+                        <button class="nietopgeslagen">
+                        </button>
+                    </p>
+                </article>
+
+                <article>
+                    <header>             
+                        <h2>Hyperbool 
+                        <img src="afbeeldingen/star.png" alt="star">
+                        </h2>
+                    </header>
+                    <p>
+                        <a class="lezen" href="/hyperbool.html">
+                        </a>
+                        <button class="nietopgeslagen">
+                        </button>
+                    </p>    
+                </article>
+            </div>
         </main>
 
         <footer>
@@ -170,7 +181,7 @@
                     </a>  
                 </li>
             </ul>
-            <p> © 2017 Transavia Verhalen </p>
+            <p> © 2019 Transavia Verhalen </p>
         </footer>
     </body>
 

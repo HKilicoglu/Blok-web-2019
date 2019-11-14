@@ -1,0 +1,198 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 85% 1fr;
+    font-family: "trebuchet ms",sans-serif;
+    background-color: white;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    margin:0;
+    border:0;
+    padding:0;
+}
+
+/*navigatie header*/
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    transition: all .2s;
+}
+
+header ul {
+    height:2.5rem;
+    position:fixed;
+    box-shadow: 0px 0px 16px 0px;
+    background-color:white; 
+    width: 100%;
+    margin:0;
+    padding-top:0.5rem;
+    padding-bottom:0.2rem;
+}
+
+header nav ul li{
+    display:block;
+    position:relative;
+    float:right;
+    padding-right:1rem;
+}
+
+header nav ul li:nth-of-type(1){
+    display:block;
+    position:relative;
+    float:left;
+}
+
+header nav ul li:nth-of-type(2){
+    margin-right:3rem;
+}
+
+header nav ul li img{
+    height:2rem; 
+}
+
+header nav ul li img:nth-of-type(1):hover{
+    height:2.5rem;
+}
+
+header nav ul li h2{
+    display:inline;
+    font-size:1rem;
+    color:#00d66c;
+    align-items: center;
+}
+
+header nav ul li h2:hover{
+    font-size:1.5rem;
+}
+
+main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top:4rem;
+    height: 60rem;
+    border-radius: 1.25em;
+    float:inherit;
+    transition: all .6s;
+    background-image:url(/afbeeldingen/mopverhaal.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*////////Verhaal/////////*/
+
+h1{
+    display:inline;
+    font-size:2rem;
+    color:#00d66c;
+    align-items: center;
+}
+
+/*////////Metadata/footer/////////*/
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width:100%;
+    color: #606060;
+    background-color:#f7f7f7;
+}
+
+footer ul{
+    height:100%;
+    padding: 0;
+}
+
+footer nav ul li {
+ display:block;
+    width:2rem;
+    padding-left:3rem;
+}
+
+
+h3{
+    font-size:0.7rem;
+    color:gray;
+}
+
+footer ul li {
+ display:inline;
+    padding-left:3rem;
+}
+
+footer img{
+    width:2rem;
+    
+}
+
+footer p{
+    align-content: center;
+    text-align: center;
+    font-size:0.7rem;
+}
+
+/*////registreren////*/
+.aanmelden{
+    margin:auto;
+    color:black;
+    font-size: 0.7rem;
+}
+
+fieldset a{
+    margin:auto;
+    color:black;
+    font-size: 0.8rem;
+}
+
+/*/////Ipad/////*/
+@media only screen and (max-width: 950px) and (min-width: 650px){ 
+    
+    fieldset{
+    width:70%;
+    }
+    
+    footer{
+        display:inline-block;
+        align-content: center;
+        text-align: center;
+    }
+    
+    footer nav ul li {
+        display:inline-block;
+    }
+    
+    main{
+    background-image:url(/afbeeldingen/mopverhaaltab.png);
+    }
+}
+
+
+/*/////Iphone////*/
+@media only screen and (max-width: 649px) and (min-width: 0px){
+    
+    section{
+        background-image: url(/afbeeldingen/lezen2.jpg);
+    }
+    
+     section div{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    header nav ul li h2 {
+        display:none;
+        }
+    
+    fieldset{
+    width:80%;
+    }
+    
+    footer{
+        display:inline-block;
+        align-content: center;
+        text-align: center;
+    }
+    
+    footer nav ul li {
+        display:inline-block;
+    }
+    main{
+    background-image:url(/afbeeldingen/mopverhaalmob.png);
+}
+}
