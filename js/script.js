@@ -1,8 +1,12 @@
-var zoekveld = document.querySelector('header form');
-var zoekbutton = document.querySelector('.zoeken');
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
+/*eslint-env browser*/
+/*eslint no-console: ["error", { allow: ["warn", "error"] }] */
 
-function show(){
-  zoekveld.classList.toggle('header form.show');
+var button = document.getElementById('button');
+var zoekbalk = document.querySelector('.zoekbalk');
+
+function yes() {
+    zoekbalk.classList.toggle('balk');
 }
 
-zoekbutton.addEventListener('click', show);
+button.addEventListener('click', yes);

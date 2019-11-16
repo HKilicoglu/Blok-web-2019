@@ -81,7 +81,7 @@ main{
 /*/////////form//////////*/
 
 fieldset{
-    width:60%;
+    width:120px;
     align-content: center;
     text-align: center;
     white-space: nowrap;
@@ -112,20 +112,35 @@ label {
 }
     
 input {
-    margin-top: 2.5em;
+    margin-top: 0em;
     height: 3em;
     padding-left: 0.5em;
-    width: 14em;
+    width: 22em;
+    border-radius:0.5rem;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    transition: border .2s linear,color .2s linear;
 }
 
 fieldset label:nth-of-type(2){
     margin-bottom: 3em;
+    margin-top:1.2rem;
+}
+
+h4{
+    display:block;
+    margin:0.3rem;
+    width:22em;
+    margin-top: 0em;
+    text-align: left;
+    margin-left:110px;
+    color: #606060;
 }
     
 
 /*////////feedback form/////////*/
 label:hover {
-    transform: scale(1.10);
+    transform: scale(1.01);
 }
 
 .correct {
@@ -150,7 +165,9 @@ input:valid{
 }
     
 input:focus {
-    transform: scale(1.20, 1.20);
+    transform: scale(1.01, 1.01);
+    color: #2800a0;
+    border-color:#2800a0;
 }
 
 /*////////button/////////*/
@@ -241,10 +258,6 @@ fieldset a{
 /*/////Ipad/////*/
 @media only screen and (max-width: 950px) and (min-width: 650px){ 
     
-    fieldset{
-    width:70%;
-    }
-    
     footer{
         display:inline-block;
         align-content: center;
@@ -272,10 +285,6 @@ fieldset a{
     header nav ul li h2 {
         display:none;
         }
-    
-    fieldset{
-    width:80%;
-    }
     
     footer{
         display:inline-block;
